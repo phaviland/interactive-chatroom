@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Interactive Chatroom</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
+    <form id="nameForm" action="javascript:init(document.getElementById('name').value)">
+        Name:
+        <input type="text" name="firstname" value="Bob" id="name">
+        <input type="submit" value="Submit">
+    </form>
+    <span id="errorMessage"></span>
+    <form style="display:none;" id="messageForm" action="javascript:sendMessage(document.getElementById('message').value)">
+        Message:
+        <input type="text" name="message" id="message" autocomplete="off" autofocus>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="index.js"></script>
+</body>
