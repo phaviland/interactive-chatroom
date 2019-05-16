@@ -5,6 +5,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
 </head>
 <body>
+    <h1>Interactive Chatroom</h1>
     <canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
     <form id="nameForm" action="javascript:init(document.getElementById('name').value)">
         Name:
@@ -17,5 +18,11 @@
         <input type="text" name="message" id="message" autocomplete="off" autofocus>
         <input type="submit" value="Submit">
     </form>
+    <div>
+        <h3><b>Instructions:</b></h3>
+        1. Enter a name.
+        <br />
+        2. Send messages to others using the form and move your avatar using the arrow keys.
+    </div>
     <script src="index.js"></script>
 </body>
